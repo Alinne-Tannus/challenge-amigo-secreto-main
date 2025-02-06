@@ -44,11 +44,27 @@ function atualizarLista() {
 
 
 function sortearAmigo(){
-    if(listaHTML == 0){
-        exibirResultado('red', 'Não existe nenhum nome na lista');
+    if(listaAmigos.length   ==  0){
+        mostrarResultado('red', 'A lista está vazia!');
+    }else{
+        let indiceSorteio = Math.floor(Math.random() * listaAmigos.length);
+        let amigoSorteado = listaAmigos[indiceSorteio];
+
+    mostrarResultado('texto', `O amigo sorteado é: ${amigoSorteado}`);
     }
 }
 
 function limparCampo(){
     document.getElementById('amigo').value = '';
+}
+
+function limparLista(){
+    listaAmigos = [];
+
+    let listaHTML = document.getElementById('listaAmigos');
+    listaHTML.innerHTML = '';
+
+    let mensagem = document.getElementById('resultado');
+    mensagem.innerHTML = '';
+    mensagem.style.color = '';  
 }
