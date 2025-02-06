@@ -4,27 +4,51 @@ function exibirTexto(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;     
 } 
-function adicionarAmigo(){
-    console.log(listaAmigos.length);
+function mostrarResultado(cor, texto){
+    let mensagem = document.getElementById('resultado');
+    mensagem.innerHTML = texto;
+
     if(amigo.value == ''){
-        exibirTexto('ul', 'Favor digitar um nome!!');
-        return;
-    } else{
-        const amigos = listaAmigos.push(document.getElementById('amigo').value);
-        exibirTexto('ul', listaAmigos.join("<br>"));
+        mensagem.style.color = cor;
     }
+}
+
+function adicionarAmigo(){
+    let amigo = document.getElementById('amigo').value.trim(); 
+    if (amigo === '') {
+        mostrarResultado('red', 'Favor digitar um nome!!');
+        return;
+    }
+    if (listaAmigos.includes(amigo)) {
+        mostrarResultado('red', 'Esse nome já está na lista');
+        limparCampo();
+        return;
+    }
+
+    listaAmigos.push(amigo);
+    atualizarLista();
     limparCampo();
 }
+function atualizarLista() {
+    let listaHTML = document.getElementById('listaAmigos');
+    listaHTML.innerHTML = ''; 
 
-function mostrarLista(){
-    exibirTexto('ul', 'olá mundo!');
+    for (let i = 0; i < listaAmigos.length; i++) {
+        let amigo = listaAmigos[i]; 
+
+        let li = document.createElement('li');
+        li.textContent = amigo; 
+        listaHTML.appendChild(li);
+    }
 }
 
-function sortearAmigo(){
 
+function sortearAmigo(){
+    if(listaHTML == 0){
+        exibirResultado('red', 'Não existe nenhum nome na lista');
+    }
 }
 
 function limparCampo(){
-    amigos = document.getElementById('amigo');
-    amigos.value = '';
+    document.getElementById('amigo').value = '';
 }
