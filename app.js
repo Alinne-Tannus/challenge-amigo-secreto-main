@@ -7,10 +7,7 @@ function exibirTexto(tag, texto){
 function mostrarResultado(cor, texto){
     let mensagem = document.getElementById('resultado');
     mensagem.innerHTML = texto;
-
-    if(amigo.value == ''){
-        mensagem.style.color = cor;
-    }
+    mensagem.style.color = cor;
 }
 
 function adicionarAmigo(){
@@ -20,7 +17,7 @@ function adicionarAmigo(){
         return;
     }
     if (listaAmigos.includes(amigo)) {
-        mostrarResultado('red', 'Esse nome já está na lista');
+        mostrarResultado('red', 'Esse nome já tem na lista!!');
         limparCampo();
         return;
     }
@@ -50,7 +47,7 @@ function sortearAmigo(){
         let indiceSorteio = Math.floor(Math.random() * listaAmigos.length);
         let amigoSorteado = listaAmigos[indiceSorteio];
 
-    mostrarResultado('texto', `O amigo sorteado é: ${amigoSorteado}`);
+    mostrarResultado('green', `O amigo sorteado é: ${amigoSorteado}`);
     }
 }
 

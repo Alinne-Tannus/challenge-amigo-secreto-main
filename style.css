@@ -131,7 +131,6 @@ button {
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
@@ -139,7 +138,6 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
