@@ -54,7 +54,7 @@ A interface é clean e responsiva, com uso de fontes "Inter" e "Merriweather", b
 
 🤝 Créditos
 ------------------
-Desenvolvido por https://github.com/Alinne-Tannus 💻
+Desenvolvido por [Alinne Tannus](https://github.com/Alinne-Tannus) 💻
 
 📄 Licença
 ----------------------
