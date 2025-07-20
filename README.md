@@ -1,11 +1,61 @@
-Um projeto simples para gerenciar uma lista de amigos e sortear um nome aleatório. Desenvolvido como parte de um curso da Alura.
+# 🎁 Amigo Secreto - Sorteador Online 👫
 
-Funcionalidades:
+Projeto simples e interativo para sortear um amigo secreto de uma lista de nomes adicionados pelo usuário. Desenvolvido com HTML, CSS e JavaScript puro.
 
-Adicionar nomes: Os usuários escreverão o nome de um amigo em um campo de texto e o adicionarão a uma lista visível ao clicar em "Adicionar".
+---
 
-Validar entrada: Se o campo de texto estiver vazio, o programa exibirá um alerta solicitando um nome válido.
+## 🖥 Tecnologias Utilizadas
 
-Visualizar a lista: Os nomes inseridos aparecerão em uma lista abaixo do campo de entrada.
+- HTML5 📄  
+- CSS3 🎨 (com variáveis CSS para cores e design responsivo)  
+- JavaScript 🟨 (DOM, manipulação de listas e eventos)
 
-Sorteio aleatório: Ao clicar no botão "Sortear Amigo", um nome da lista será selecionado aleatoriamente e exibido na página.
+---
+
+## 🚀 Como Usar
+
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/Alinne-Tannus/seu-repositorio.git
+   ```
+Navegue até a pasta do projeto:
+
+```bash
+cd https://github.com/Alinne-Tannus/challenge-amigo-secreto-main
+```
+Abra o arquivo index.html em seu navegador preferido.
+
+🎯 Funcionalidades
+-------------------
+
+- Adicionar nomes na lista do amigo secreto (com verificação para evitar nomes vazios ou duplicados).
+
+- Visualizar a lista de amigos adicionados.
+
+- Sortear aleatoriamente um nome da lista como "amigo secreto".
+
+- Limpar a lista inteira com um clique.
+
+- Feedback visual com mensagens coloridas para erros e resultados.
+
+📋 Estrutura do Projeto
+--------------------
+`index.html` — arquivo principal com a estrutura da página.
+
+`style.css` — estilos customizados com uso de variáveis CSS para cores.
+
+`app.js` — script JavaScript responsável pela lógica de adicionar, sortear e limpar nomes.
+
+`assets/` — imagens usadas no layout e botões.
+
+📸 Visual
+-----------------
+A interface é clean e responsiva, com uso de fontes "Inter" e "Merriweather", botões coloridos e layout moderno.
+
+🤝 Créditos
+------------------
+Desenvolvido por https://github.com/Alinne-Tannus 💻
+
+📄 Licença
+----------------------
+Projeto para fins educacionais.
